@@ -1,0 +1,55 @@
+@import "./vendors/_normalize.scss";
+@import "./base/base.scss";
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
+/* Version mobile */
+
+.wrapper {
+  max-width: 768px;
+  margin: auto;
+}
+
+/* Header */
+
+header img {
+  height: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Localisation */
+
+.menu {
+  text-align: center;
+  &__localisation {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    background: $localisation-top;
+  }
+  &__description {
+    background: $localisation;
+    padding-bottom: 75px;
+    & h1 {
+      margin-top: 0;
+      padding: 30px 60px 0 60px;
+      font-size: 22px;
+    }
+    & p {
+      padding: 0 10px 0 10px;
+      margin-bottom: 45px;
+    }
+  }
+  &__btn {
+    @include btn-color;
+    margin-top: 50px;
+    & a {
+      color: $link-color;
+    }
+  }
+}

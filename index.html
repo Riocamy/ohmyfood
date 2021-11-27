@@ -12,8 +12,6 @@
     <link 
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" 
     rel="stylesheet">
-    <!-- Fichier Normalize.css -->
-    <link rel="stylesheet" href="public/css/normalize.css" />
     <!-- Fichier CSS -->
     <link rel="stylesheet" href="public/css/style.css" />
   </head>
@@ -24,17 +22,21 @@
         <a href="index.html"><img src="public/images/logo/ohmyfood.png" alt="Logo"/></a>
       </header>
       <!--Localisation et Bouton CTA-->
-      <section>
-        <div class="localisation">
+      <nav class="menu">
+        <div class="menu__localisation">
           <i class="fas fa-map-marker-alt"></i>
           <p>Paris, Belleville</p>
         </div>
-        <div class="reservation">
+        <div class="menu__description">
           <h1>Réservez le menu qui vous convient</h1>
           <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-          <div class="btn"><a href="#">Explorez nos restaurants</a></div>
+          <span class="menu__btn">
+            <a href="#">
+              Explorez nos restaurants
+            </a>
+          </span>
         </div>
-      </section>
+      </nav>
       <!---Filtres-->
       <section class="fonctionnement">
         <h2>Fonctionnement</h2>

@@ -1,0 +1,7 @@
+@mixin btn-color {
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  box-shadow: 2px 3px 3px #c7c5c5;
+  border-radius: 90px;
+  /*margin: 30px 75px 30px 75px;*/
+  padding: 15px;
+}
