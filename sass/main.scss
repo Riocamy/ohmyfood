@@ -33,7 +33,7 @@ header img {
     background: $localisation-top;
   }
   &__description {
-    background: $localisation;
+    background: $background;
     padding-bottom: 75px;
     & h1 {
       margin-top: 0;
@@ -61,22 +61,22 @@ header img {
   & h2 {
     margin-left: 20px;
   }
-  &__filter {
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-    
-    & a {
-      @include box-shadow;
-      background: $localisation;
-      padding: 25px 35px 25px 40px;
-      margin-left: 10px;
-      margin-right: 20px;
-      margin-bottom: 15px;
-      border-radius: 15px;
-      width: 100%;
-      font-weight: bold;
-    }
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  & a {
+    @include box-shadow;
+    background: $background;
+    padding: 25px 35px 25px 40px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    width: 100%;
+    font-weight: bold;
   }
   &__number {
     color: $link-color;
@@ -91,5 +91,65 @@ header img {
     font-size: 12px;
     position: absolute;
     margin-top: 22px;
+  }
+}
+
+/* Sélection des restaurants */
+
+.restaurants {
+  background: $background;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  & h2 {
+    margin-left: 20px;
+  }
+}
+
+.card {
+  @include box-shadow;
+  background-color: $link-color;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  width: auto;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  & img {
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+  }
+  &__new {
+    background: $tertiary-color;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    bottom: 150px;
+    padding: 5px;
+    border-radius: 2px;
+    & span {
+      color: #0f9271;
+      font-weight: bold;
+    }
+  }
+  &__description {
+    margin-left: 10px;
+    & h3 {
+      margin: 7px 0 0 0;
+    }
+    & p {
+      margin: 0 0 7px 0;
+    }
+  }
+  &__btn-favorite {
+    display: inline-flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 30px;
+    bottom: 40px;
   }
 }

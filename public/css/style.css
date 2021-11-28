@@ -255,6 +255,10 @@ a {
   color: grey;
 }
 
+.fa-heart {
+  font-size: 20px;
+}
+
 /* Couleurs */
 /* Couleurs liens */
 /* Localisation */
@@ -318,12 +322,13 @@ header img {
 .user h2 {
   margin-left: 20px;
 }
-.user__filter {
+
+.filter {
   display: flex;
   flex-direction: row;
   margin-left: 20px;
 }
-.user__filter a {
+.filter a {
   box-shadow: 2px 3px 12px #c7c5c5;
   background: #F2F2F2;
   padding: 25px 35px 25px 40px;
@@ -334,7 +339,7 @@ header img {
   width: 100%;
   font-weight: bold;
 }
-.user__number {
+.filter__number {
   color: white;
   background-color: #9356DC;
   display: flex;
@@ -347,6 +352,65 @@ header img {
   font-size: 12px;
   position: absolute;
   margin-top: 22px;
+}
+
+/* Sélection des restaurants */
+.restaurants {
+  background: #F2F2F2;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.restaurants h2 {
+  margin-left: 20px;
+}
+
+.card {
+  box-shadow: 2px 3px 12px #c7c5c5;
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  width: auto;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+}
+.card img {
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 160px;
+}
+.card__new {
+  background: #99E2D0;
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  bottom: 150px;
+  padding: 5px;
+  border-radius: 2px;
+}
+.card__new span {
+  color: #0f9271;
+  font-weight: bold;
+}
+.card__description {
+  margin-left: 10px;
+}
+.card__description h3 {
+  margin: 7px 0 0 0;
+}
+.card__description p {
+  margin: 0 0 7px 0;
+}
+.card__btn-favorite {
+  display: inline-flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 30px;
+  bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
