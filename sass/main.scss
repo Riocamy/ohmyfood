@@ -53,3 +53,43 @@ header img {
     }
   }
 }
+/* Filtres */
+
+.user {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  & h2 {
+    margin-left: 20px;
+  }
+  &__filter {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    
+    & a {
+      @include box-shadow;
+      background: $localisation;
+      padding: 25px 35px 25px 40px;
+      margin-left: 10px;
+      margin-right: 20px;
+      margin-bottom: 15px;
+      border-radius: 15px;
+      width: 100%;
+      font-weight: bold;
+    }
+  }
+  &__number {
+    color: $link-color;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5px;
+    width: 5px;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 22px;
+  }
+}

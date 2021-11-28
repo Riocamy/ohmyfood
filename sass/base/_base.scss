@@ -2,6 +2,7 @@
 
 * {
   font-family: Roboto;
+  color: black;
 }
 
 a {
@@ -12,4 +13,20 @@ a {
 
 .fa-map-marker-alt {
   margin-right: 10px;
+}
+
+/* Icônes des filtres */
+
+.fa-mobile-alt {
+  font-size: 15px;
+  margin-right: 20px;
+  color: grey;
+}
+
+.fa-list {
+  @extend .fa-mobile-alt;
+}
+
+.fa-store {
+  @extend .fa-mobile-alt;
 }

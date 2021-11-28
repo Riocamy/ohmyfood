@@ -5,3 +5,7 @@
   /*margin: 30px 75px 30px 75px;*/
   padding: 15px;
 }
+
+@mixin box-shadow {
+  box-shadow: 2px 3px 12px #c7c5c5;
+}

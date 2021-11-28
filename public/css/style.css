@@ -236,6 +236,7 @@ input[type=checkbox], input[type=radio] {
 /* Bases du site */
 * {
   font-family: Roboto;
+  color: black;
 }
 
 a {
@@ -247,7 +248,14 @@ a {
   margin-right: 10px;
 }
 
-/* Variables */
+/* Icônes des filtres */
+.fa-mobile-alt, .fa-store, .fa-list {
+  font-size: 15px;
+  margin-right: 20px;
+  color: grey;
+}
+
+/* Couleurs */
 /* Couleurs liens */
 /* Localisation */
 /* Version mobile */
@@ -300,6 +308,45 @@ header img {
 }
 .menu__btn a {
   color: white;
+}
+
+/* Filtres */
+.user {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.user h2 {
+  margin-left: 20px;
+}
+.user__filter {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+.user__filter a {
+  box-shadow: 2px 3px 12px #c7c5c5;
+  background: #F2F2F2;
+  padding: 25px 35px 25px 40px;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  width: 100%;
+  font-weight: bold;
+}
+.user__number {
+  color: white;
+  background-color: #9356DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5px;
+  width: 5px;
+  border-radius: 100px;
+  padding: 10px;
+  font-size: 12px;
+  position: absolute;
+  margin-top: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
