@@ -12,20 +12,22 @@
     <link 
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" 
     rel="stylesheet">
-    <!-- Fichier Normalize.css -->
-    <link rel="stylesheet" href="public/css/normalize.css" />
     <!-- Fichier CSS -->
-    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/style.css" />
   </head>
   <body>
     <div class="wrapper">
       <!--Header-->
       <header>
-        <a href="content/index.html"><i class="fas fa-arrow-left"></i></a>
-        <a href="content/index.html"><img src="public/images/logo/ohmyfood.png" alt="Logo"/></a>
+        <div class="header-pages">
+          <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+          <a href="/index.html"><img src="/public/images/logo/ohmyfood.png" alt="Logo"/></a>
+        </div>
       </header>
       <!--Bannière-->
-      <img src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" />
+      <div class="banner">
+        <img src="/public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" />
+      </div>
       <!--Sélection des menus-->
       <!--Entrées-->
       <section class="menu-restaurant">
@@ -33,98 +35,102 @@
           <h1>Le délice des sens</h1>
           <i class="far fa-heart"></i>
         </div>
-        <div class="menu-restaurant__card">
-          <div class="menu-restaurant__card__title">
+        <div class="menu-card">
+          <div class="menu-card__title">
             <h2>ENTRÉES</h2>
           </div>
-          <div class="menu-restaurant__card__content">
+          <div class="menu-btn">
             <h2>Tartare de thon</h2>
-            <div class="menu-restaurant__card__price">
+            <div class="menu-btn__content">
               <p>Assaisonné au yuzu</p>
               <p><strong>25€</strong></p>
             </div>
           </div>
-          <div class="menu-restaurant__card__content">
+          <div class="menu-btn">
             <h2>Bouchée de homard croustillant</h2>
-            <div class="menu-restaurant__card__price">
+            <div class="menu-btn__content">
               <p>Et sa farandole de petits légumes</p>
               <p><strong>35€</strong></p>
             </div>
           </div>
-          <div class="menu-restaurant__card__content">
+          <div class="menu-btn">
             <h2>Velouté de cèpes</h2>
-            <div class="menu-restaurant__card__price">
+            <div class="menu-btn__content">
               <p>Aux truffes</p>
               <p><strong>20€</strong></p>
             </div>
           </div>
         </div>
         <!--Plats-->
-        <div class="menu-restaurant__card">
-          <div class="menu-restaurant__card__title">
+        <div class="menu-card">
+          <div class="menu-card__title">
             <h2>PLATS</h2>
           </div>
-          <div class="menu-restaurant__card__content">
+          <div class="menu-btn">
             <h2>Poulet rôti aux herbes de Provence</h2>
-            <div class="menu-restaurant__card__price">
+            <div class="menu-btn__content">
               <p>Et sa crème de truffe</p>
               <p><strong>40€</strong></p>
             </div>
           </div>
-          <div class="menu-restaurant__card__content">
+          <div class="menu-btn">
             <h2>Langouste rôtie</h2>
-            <div class="menu-restaurant__card__price">
+            <div class="menu-btn__content">
               <p>Et ses légumes de saison</p>
               <p><strong>35€</strong></p>
             </div>
           </div>
-          <div class="menu-restaurant__card__content">
+          <div class="menu-btn">
             <h2>Côte de boeuf Angus</h2>
-            <div class="menu-restaurant__card__price">
+            <div class="menu-btn__content">
               <p>Et sa purée de panais</p>
               <p><strong>44€</strong></p>
             </div>
           </div>
         </div>
         <!--Désserts-->
-        <div class="menu-restaurant__card">
-          <div class="menu-restaurant__card__title">
+        <div class="menu-card">
+          <div class="menu-card__title">
             <h2>DESSERTS</h2>
           </div>
-          <div class="menu-restaurant__card__content">
+          <div class="menu-btn">
             <h2>Farandole de desserts</h2>
-            <div class="menu-restaurant__card__price">
+            <div class="menu-btn__content">
               <p>Du chef</p>
               <p><strong>18€</strong></p>
             </div>
           </div>
-          <div class="menu-restaurant__card__content">
+          <div class="menu-btn">
             <h2>Crème brulée</h2>
-            <div class="menu-restaurant__card__price">
+            <div class="menu-btn__content">
               <p>Revisité</p>
               <p><strong>22€</strong></p>
             </div>
           </div>
-          <div class="menu-restaurant__card__content">
+          <div class="menu-btn">
             <h2>Tiramisu</h2>
-            <div class="menu-restaurant__card__price">
+            <div class="menu-btn__content">
               <p>À la noisette</p>
               <p><strong>23€</strong></p>
             </div>
           </div>
         </div>
-        <div class="btn"><a href="#">Commander</a></div>
+        <div class="btn-order"><a href="#">Commander</a></div>
       </section>
       <!--Footer-->
       <footer>
-        <img src="public/images/logo/ohmyfood.png" alt="Logo"/>
+        <h2>ohmyfood</h2>
         <ul>
-          <li><a href="#">Proposer un restaurant</a></li>
-          <!-- Icone : <i class="fas fa-utensils"></i> -->
-          <li><a href="#">Devenir partenaire</a></li>
-          <!-- Icne :  <i class="fas fa-hands-helping"></i> -->
+          <li class="footer__proposition">
+            <i class="fas fa-utensils"></i>
+            <a href="#">Proposer un restaurant</a>
+          </li>
+          <li class="footer__partnership">
+            <i class="fas fa-hands-helping"></i>
+            <a href="#">Devenir partenaire</a>
+          </li>
           <li><a href="#">Mentions légales</a></li>
-          <li><a href="mailto:#">Contact</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </footer>
     </div>

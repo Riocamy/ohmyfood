@@ -5,6 +5,10 @@
   color: black;
 }
 
+body {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -53,4 +57,13 @@ ul {
 
 .fa-hands-helping {
   @extend .fa-utensils;
+}
+
+
+/* Icône du header des pages restaurants */
+
+.fa-arrow-left {
+  float: left;
+  margin-left: 20px;
+
 }

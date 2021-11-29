@@ -239,6 +239,10 @@ input[type=checkbox], input[type=radio] {
   color: black;
 }
 
+body {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -274,11 +278,18 @@ ul {
   font-size: 12px;
 }
 
+/* Icône du header des pages restaurants */
+.fa-arrow-left {
+  float: left;
+  margin-left: 20px;
+}
+
 /* Couleurs */
 /* Couleurs liens */
 /* Localisation */
 /* Footer */
 /* Version mobile */
+/* Homepage */
 .wrapper {
   max-width: 768px;
   margin: auto;
@@ -323,7 +334,7 @@ header img {
   box-shadow: 2px 3px 3px #c7c5c5;
   border-radius: 90px;
   /*margin: 30px 75px 30px 75px;*/
-  padding: 15px;
+  padding: 15px 25px 15px 25px;
   margin-top: 50px;
 }
 .menu__btn a {
@@ -443,6 +454,100 @@ footer h2 {
 }
 footer a {
   color: whitesmoke;
+}
+
+/* Pages 1 à 4 */
+/* Header */
+.header-pages img {
+  text-align: center;
+}
+
+/* Bannière photo */
+.banner img {
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+}
+
+/* Carte du restaurant */
+.menu-restaurant {
+  background: #F2F2F2;
+  margin-top: -45px;
+  border-radius: 30px 30px 0 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.menu-restaurant__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px 0 20px;
+}
+.menu-restaurant h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Shrikhand;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.menu-card {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menu-card__title:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 45px;
+  margin-bottom: 15px;
+  background-color: #99E2D0;
+}
+.menu-card h2 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.menu-btn {
+  box-shadow: 2px 3px 12px #c7c5c5;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  padding: 15px 25px 10px 10px;
+  margin-bottom: 10px;
+}
+.menu-btn h2 {
+  font-size: 18px;
+  margin: 0;
+}
+.menu-btn__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-btn__content p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
+/* Bouton commande */
+.btn-order {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.btn-order a {
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  box-shadow: 2px 3px 3px #c7c5c5;
+  border-radius: 90px;
+  /*margin: 30px 75px 30px 75px;*/
+  padding: 15px 25px 15px 25px;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
