@@ -153,3 +153,20 @@ header img {
     bottom: 40px;
   }
 }
+
+/* Footer */
+
+footer {
+  background: rgb(63, 62, 62);
+  padding: 25px 0 20px 25px;
+  & h2 {
+    font-family: Shrikhand;
+    font-weight: normal;
+    font-size: 16px;
+    color: $footer-color;
+    margin-top: 0;
+  }
+  & a {
+    color: $footer-color;
+  }
+}

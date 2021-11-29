@@ -9,6 +9,14 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
 /* Icône de localisation */
 
 .fa-map-marker-alt {
@@ -33,4 +41,16 @@ a {
 
 .fa-heart {
   font-size: 20px;
+}
+
+/* Icônes du Footer */
+
+.fa-utensils {
+  color: whitesmoke;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.fa-hands-helping {
+  @extend .fa-utensils;
 }

@@ -243,6 +243,14 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
 /* Icône de localisation */
 .fa-map-marker-alt {
   margin-right: 10px;
@@ -259,9 +267,17 @@ a {
   font-size: 20px;
 }
 
+/* Icônes du Footer */
+.fa-utensils, .fa-hands-helping {
+  color: whitesmoke;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
 /* Couleurs */
 /* Couleurs liens */
 /* Localisation */
+/* Footer */
 /* Version mobile */
 .wrapper {
   max-width: 768px;
@@ -411,6 +427,22 @@ header img {
   position: relative;
   margin-right: 30px;
   bottom: 40px;
+}
+
+/* Footer */
+footer {
+  background: #3f3e3e;
+  padding: 25px 0 20px 25px;
+}
+footer h2 {
+  font-family: Shrikhand;
+  font-weight: normal;
+  font-size: 16px;
+  color: whitesmoke;
+  margin-top: 0;
+}
+footer a {
+  color: whitesmoke;
 }
 
 /*# sourceMappingURL=style.css.map */
