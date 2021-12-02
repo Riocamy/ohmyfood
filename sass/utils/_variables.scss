@@ -2,14 +2,71 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-$background: #F2F2F2;
 
-/* Couleurs liens */
-$link-color: white;
+$background-color-body: #F2F2F2;
+$background-color-footer: rgb(63, 62, 62);
 
-/* Localisation */
-$localisation-top: linear-gradient(to top,rgb(226, 225, 225) 90%, rgb(206, 203, 203));
+$grey-light: rgb(226, 225, 225);
+$grey-dark: rgb(206, 203, 203);
+$grey-shadow: #c7c5c5;
 
-/* Footer */
+/* Effet de dégradé */
+$localisation-gradient: linear-gradient(to top, $grey-light 90%, $grey-dark);
 
-$footer-color: whitesmoke;
+/* Couleurs polices */
+$font-color-link: white;
+$font-color-novelty: #0f9271;
+$font-color-footer: whitesmoke;
+
+/* Tailles de polices */
+$filter-number: 12px;
+$menu-description: 14px;
+$font-size-footer: 16px;
+$menu-title: 18px;
+$explore-title: 22px;
+$restaurant-title: 28px;
+
+/* Padding */
+
+$padding-explore-title: 30px 60px 0 60px;
+$padding-explore-description: 0 0 75px 0;
+$padding-explore-paragraph: 0 10px 0 10px;
+$padding-filter: 25px 35px 25px 40px;
+$padding-filter-number: 10px;
+$padding-restaurants: 40px 0 50px 0;
+$padding-novelty: 5px;
+$padding-footer: 25px 0 20px 25px;
+$padding-menu-restaurant: 30px 0 40px 0;
+$padding-menu-btn: 15px 25px 10px 10px;
+
+/* Margin */
+
+$margin-user: 40px 0 50px 0;
+$margin-filter: 0 20px 15px 10px;
+$margin-card: 0 20px 15px 20px;
+$margin-card-title: 7px 0 0 0;
+$margin-card-paragraph: 0 0 7px 0;
+$margin-menu-restaurant-title: 0 30px 0 20px;
+$margin-menu-card: 0 10px 0 10px;
+$margin-menu-btn-paragraph: 5px 0 0 0;
+
+$margin-value-1: 5px;
+$margin-value-2: 10px;
+$margin-value-3: 20px;
+$margin-value-4: 30px;
+$margin-value-5: 50px;
+
+/* Border radius */
+
+$radius-main: 15px;
+$radius-filter-number: 100px;
+$radius-card: 15px 15px 0 0;
+$radius-novelty: 2px;
+$radius-restaurant: 30px 30px 0 0;
+
+/* Autres valeurs */
+
+$zero-value: 0;
+$main-width: 100%;
+$normal-weight: normal;
+$bold-weight: bold;

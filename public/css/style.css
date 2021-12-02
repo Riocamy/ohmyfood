@@ -285,9 +285,13 @@ ul {
 }
 
 /* Couleurs */
-/* Couleurs liens */
-/* Localisation */
-/* Footer */
+/* Effet de dégradé */
+/* Couleurs polices */
+/* Tailles de polices */
+/* Padding */
+/* Margin */
+/* Border radius */
+/* Autres valeurs */
 /* Version mobile */
 /* Homepage */
 .wrapper {
@@ -299,37 +303,34 @@ ul {
 header img {
   height: 25px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px auto;
 }
 
 /* Localisation */
-.menu {
+.explore {
   text-align: center;
 }
-.menu__localisation {
+.explore__localisation {
+  background: linear-gradient(to top, #e2e1e1 90%, #cecbcb);
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: center;
-  background: linear-gradient(to top, #e2e1e1 90%, #cecbcb);
 }
-.menu__description {
+.explore__description {
   background: #F2F2F2;
-  padding-bottom: 75px;
+  padding: 0 0 75px 0;
 }
-.menu__description h1 {
-  margin-top: 0;
+.explore__description h1 {
   padding: 30px 60px 0 60px;
   font-size: 22px;
+  margin: 0;
 }
-.menu__description p {
+.explore__description p {
   padding: 0 10px 0 10px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
-.menu__btn {
+.explore__btn {
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   box-shadow: 2px 3px 3px #c7c5c5;
   border-radius: 90px;
@@ -337,14 +338,13 @@ header img {
   padding: 15px 25px 15px 25px;
   margin-top: 50px;
 }
-.menu__btn a {
+.explore__btn a {
   color: white;
 }
 
 /* Filtres */
 .user {
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin: 40px 0 50px 0;
 }
 .user h2 {
   margin-left: 20px;
@@ -353,39 +353,36 @@ header img {
 .filter {
   display: flex;
   flex-direction: row;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .filter a {
   box-shadow: 2px 3px 12px #c7c5c5;
   background: #F2F2F2;
   padding: 25px 35px 25px 40px;
-  margin-left: 10px;
-  margin-right: 20px;
-  margin-bottom: 15px;
   border-radius: 15px;
+  margin: 0 20px 15px 10px;
   width: 100%;
   font-weight: bold;
 }
 .filter__number {
   color: white;
   background-color: #9356DC;
+  border-radius: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 22px;
   height: 5px;
   width: 5px;
-  border-radius: 100px;
   padding: 10px;
   font-size: 12px;
   position: absolute;
-  margin-top: 22px;
 }
 
 /* Sélection des restaurants */
 .restaurants {
   background: #F2F2F2;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding: 40px 0 50px 0;
 }
 .restaurants h2 {
   margin-left: 20px;
@@ -395,9 +392,7 @@ header img {
   box-shadow: 2px 3px 12px #c7c5c5;
   background-color: white;
   border-radius: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 15px;
+  margin: 0 20px 15px 20px;
   width: auto;
   height: 225px;
   display: flex;
@@ -473,9 +468,8 @@ footer a {
 .menu-restaurant {
   background: #F2F2F2;
   margin-top: -45px;
-  border-radius: 30px 30px 0 30px;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  border-radius: 30px 30px 0 0;
+  padding: 30px 0 40px 0;
   position: relative;
 }
 .menu-restaurant__title {
@@ -486,26 +480,27 @@ footer a {
   margin: 0 30px 0 20px;
 }
 .menu-restaurant h1 {
-  margin-top: 0;
-  margin-bottom: 0;
   font-family: Shrikhand;
   font-weight: normal;
   font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .menu-card {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px 0 10px;
 }
 .menu-card__title:after {
+  background-color: #99E2D0;
   content: "";
   display: block;
   height: 3px;
   width: 45px;
   margin-bottom: 15px;
-  background-color: #99E2D0;
 }
 .menu-card h2 {
+  font-weight: normal;
+  font-size: 16px;
   margin-top: 30px;
   margin-bottom: 5px;
 }
@@ -520,6 +515,8 @@ footer a {
   margin-bottom: 10px;
 }
 .menu-btn h2 {
+  font-weight: bold;
+  font-size: 18px;
   font-size: 18px;
   margin: 0;
 }
@@ -537,7 +534,7 @@ footer a {
 .btn-order {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .btn-order a {
   background: linear-gradient(180deg, #FF79DA, #9356DC);
@@ -545,9 +542,9 @@ footer a {
   border-radius: 90px;
   /*margin: 30px 75px 30px 75px;*/
   padding: 15px 25px 15px 25px;
-  color: white;
   padding-left: 50px;
   padding-right: 50px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

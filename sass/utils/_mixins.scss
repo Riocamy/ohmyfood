@@ -1,11 +1,44 @@
 @mixin btn-color {
-  background: linear-gradient(180deg, #FF79DA, #9356DC);
-  box-shadow: 2px 3px 3px #c7c5c5;
+  background: linear-gradient(180deg, $secondary-color, $primary-color);
+  box-shadow: 2px 3px 3px $grey-shadow;
   border-radius: 90px;
   /*margin: 30px 75px 30px 75px;*/
   padding: 15px 25px 15px 25px;
 }
 
+@mixin padding-btn-more {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@mixin number-display {
+  color: $font-color-link;
+  background-color: $primary-color;
+  border-radius: $radius-filter-number;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+  height: 5px;
+  width: 5px;
+  padding: $padding-filter-number;
+  font-size: $filter-number;
+}
+
 @mixin box-shadow {
-  box-shadow: 2px 3px 12px #c7c5c5;
+  box-shadow: 2px 3px 12px $grey-shadow;
+}
+
+@mixin title-style {
+  font-family: Shrikhand;
+  font-weight: normal;
+}
+
+@mixin green-bar {
+  background-color: $tertiary-color;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 45px;
+    margin-bottom: 15px;
 }

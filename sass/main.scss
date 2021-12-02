@@ -17,141 +17,123 @@
 header img {
   height: 25px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px auto;
 }
 
 /* Localisation */
 
-.menu {
+.explore {
   text-align: center;
   &__localisation {
+    background: $localisation-gradient;
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
-    background: $localisation-top;
   }
   &__description {
-    background: $background;
-    padding-bottom: 75px;
+    background: $background-color-body;
+    padding: $padding-explore-description;
     & h1 {
-      margin-top: 0;
-      padding: 30px 60px 0 60px;
-      font-size: 22px;
+      padding: $padding-explore-title;
+      font-size: $explore-title;
+      margin: $zero-value;
     }
     & p {
-      padding: 0 10px 0 10px;
-      margin-bottom: 45px;
+      padding: $padding-explore-paragraph;
+      margin-bottom: $margin-value-5;
     }
   }
   &__btn {
     @include btn-color;
     margin-top: 50px;
     & a {
-      color: $link-color;
+      color: $font-color-link;
     }
   }
 }
 /* Filtres */
 
 .user {
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin: $margin-user;
   & h2 {
-    margin-left: 20px;
+    margin-left: $margin-value-3;
   }
 }
 
 .filter {
   display: flex;
   flex-direction: row;
-  margin-left: 20px;
+  margin-left: $margin-value-2;
   & a {
     @include box-shadow;
-    background: $background;
-    padding: 25px 35px 25px 40px;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-bottom: 15px;
-    border-radius: 15px;
-    width: 100%;
-    font-weight: bold;
+    background: $background-color-body;
+    padding: $padding-filter;
+    border-radius: $radius-main;
+    margin: $margin-filter;
+    width: $main-width;
+    font-weight: $bold-weight;
   }
   &__number {
-    color: $link-color;
-    background-color: $primary-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 5px;
-    width: 5px;
-    border-radius: 100px;
-    padding: 10px;
-    font-size: 12px;
+    @include number-display;
     position: absolute;
-    margin-top: 22px;
+    
   }
 }
 
 /* Sélection des restaurants */
 
 .restaurants {
-  background: $background;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  background: $background-color-body;
+  padding: $padding-restaurants;
   & h2 {
-    margin-left: 20px;
+    margin-left: $margin-value-3;
   }
 }
 
 .card {
   @include box-shadow;
-  background-color: $link-color;
-  border-radius: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 15px;
+  background-color: $font-color-link;
+  border-radius: $radius-main;
+  margin: $margin-card;
   width: auto;
   height: 225px;
   display: flex;
   flex-direction: column;
   box-sizing: content-box;
   & img {
-    border-radius: 15px 15px 0 0;
+    border-radius: $radius-card;
     object-fit: cover;
-    width: 100%;
+    width: $main-width;
     height: 160px;
   }
   &__new {
     background: $tertiary-color;
     position: relative;
     float: right;
-    margin-right: 10px;
+    margin-right: $margin-value-2;
     bottom: 150px;
-    padding: 5px;
-    border-radius: 2px;
+    padding: $padding-novelty;
+    border-radius: $radius-novelty;
     & span {
-      color: #0f9271;
-      font-weight: bold;
+      color: $font-color-novelty;
+      font-weight: $bold-weight;
     }
   }
   &__description {
-    margin-left: 10px;
+    margin-left: $margin-value-2;
     & h3 {
-      margin: 7px 0 0 0;
+      margin: $margin-card-title;
     }
     & p {
-      margin: 0 0 7px 0;
+      margin: $margin-card-paragraph;
     }
   }
   &__btn-favorite {
     display: inline-flex;
     justify-content: flex-end;
     position: relative;
-    margin-right: 30px;
+    margin-right: $margin-value-4;
     bottom: 40px;
   }
 }
@@ -159,17 +141,16 @@ header img {
 /* Footer */
 
 footer {
-  background: rgb(63, 62, 62);
-  padding: 25px 0 20px 25px;
+  background: $background-color-footer;
+  padding: $padding-footer;
   & h2 {
-    font-family: Shrikhand;
-    font-weight: normal;
-    font-size: 16px;
-    color: $footer-color;
-    margin-top: 0;
+    @include title-style;
+    font-size: $font-size-footer;
+    color: $font-color-footer;
+    margin-top: $zero-value;
   }
   & a {
-    color: $footer-color;
+    color: $font-color-footer;
   }
 }
 
@@ -189,49 +170,43 @@ footer {
   & img {
     object-fit: cover;
     height: 250px;
-    width: 100%;
+    width: $main-width;
   }
 }
 
 /* Carte du restaurant */
 
 .menu-restaurant {
-  background: $background;
+  background: $background-color-body;
   margin-top: -45px;
-  border-radius: 30px 30px 0 30px;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  border-radius: $radius-restaurant;
+  padding: $padding-menu-restaurant;
   position: relative;
   &__title {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0 30px 0 20px;
+    margin: $margin-menu-restaurant-title
   }
   & h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: Shrikhand;
-    font-weight: normal;
-    font-size: 28px;
+    @include title-style;
+    font-size: $restaurant-title;
+    margin-top: $zero-value;
+    margin-bottom: $zero-value;
   }
 }
 
 .menu-card {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: $margin-menu-card;
   &__title:after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 45px;
-    margin-bottom: 15px;
-    background-color: $tertiary-color;
+    @include green-bar;
     }
   & h2 {
-    margin-top: 30px;
-    margin-bottom: 5px;
+    font-weight: $normal-weight;
+    font-size: $font-size-footer;
+    margin-top: $margin-value-4;
+    margin-bottom: $margin-value-1;
   }
 }
 
@@ -239,21 +214,23 @@ footer {
   @include box-shadow;
   display: flex;
   flex-direction: column;
-  background: $link-color;
-  border-radius: 15px;
-  padding: 15px 25px 10px 10px;
-  margin-bottom: 10px;
+  background: $font-color-link;
+  border-radius: $radius-main;
+  padding: $padding-menu-btn;
+  margin-bottom: $margin-value-2;
   & h2 {
-    font-size: 18px;
-    margin: 0;
+    font-weight: $bold-weight;
+    font-size: $menu-title;
+    font-size: $menu-title;
+    margin: $zero-value;
   }
   &__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     & p {
-      margin: 5px 0 0 0;
-      font-size: 14px;
+      margin: $margin-menu-btn-paragraph;
+      font-size: $menu-description;
     }
   }
 }
@@ -263,11 +240,10 @@ footer {
 .btn-order {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: $margin-value-5;
   & a {
     @include btn-color;
-    color: $link-color;
-    padding-left: 50px;
-    padding-right: 50px;
+    @include padding-btn-more;
+    color: $font-color-link;
   }
 }
