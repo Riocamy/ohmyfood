@@ -43,8 +43,18 @@ ul {
   @extend .fa-mobile-alt;
 }
 
+/* Icône des favoris */
+
 .fa-heart {
-  font-size: 20px;
+  font-size: 25px;
+  &:hover:active {
+    display: block;
+    background: -webkit-linear-gradient($secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+  }
 }
 
 /* Icônes du Footer */
@@ -65,5 +75,4 @@ ul {
 .fa-arrow-left {
   float: left;
   margin-left: 20px;
-
 }

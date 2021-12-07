@@ -1,7 +1,7 @@
 @import "./vendors/_normalize.scss";
-@import "./base/base.scss";
 @import "./utils/variables.scss";
 @import "./utils/mixins.scss";
+@import "./base/base.scss";
 
 /* Version mobile */
 
@@ -10,6 +10,13 @@
 .wrapper {
   max-width: 768px;
   margin: auto;
+}
+
+.loading-spinner {
+  font-size: 50px;
+  transform: rotate(360deg);
+  transition-duration: 3s;
+  z-index: -1;
 }
 
 /* Header */
@@ -47,8 +54,12 @@ header img {
   &__btn {
     @include btn-color;
     margin-top: 50px;
+    transition: 1s;
     & a {
       color: $font-color-link;
+    }
+    &:hover {
+      @include btn-hover;
     }
   }
 }
@@ -130,11 +141,12 @@ header img {
     }
   }
   &__btn-favorite {
-    display: inline-flex;
+    display: flex;
     justify-content: flex-end;
     position: relative;
     margin-right: $margin-value-4;
     bottom: 40px;
+    /* Icône des favoris dans le fichier "_base.scss" */
   }
 }
 
