@@ -8,6 +8,7 @@
 @mixin btn-hover {
   background:linear-gradient(0deg, $primary-color, 30%, $secondary-color);
   box-shadow: 5px 8px 8px $grey-shadow;
+  transition: 0.3s ease-out;
 }
 
 @mixin padding-btn-more {

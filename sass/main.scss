@@ -90,7 +90,6 @@ header img {
     }
     &:hover {
       @include btn-hover;
-      transition: 0.3s ease-out;
     }
   }
 }
@@ -301,5 +300,8 @@ footer {
     @include btn-color;
     @include padding-btn-more;
     color: $font-color-link;
+  }
+  &:hover a {
+    @include btn-hover;
   }
 }
