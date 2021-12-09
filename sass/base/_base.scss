@@ -21,6 +21,15 @@ ul {
   padding: 0;
 }
 
+/* Icône du spin-loader */
+
+.fa-sync {
+  display: block;
+  background: -webkit-linear-gradient($secondary-color, $primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Icône de localisation */
 
 .fa-map-marker-alt {
@@ -47,7 +56,8 @@ ul {
 
 .fa-heart {
   font-size: 25px;
-  &:hover:active {
+  &:hover {
+    transition: 0.3s ease;
     display: block;
     background: -webkit-linear-gradient($secondary-color, $primary-color);
     -webkit-background-clip: text;

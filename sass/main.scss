@@ -5,18 +5,49 @@
 
 /* Version mobile */
 
+/* Ecran de chargement */
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: $background-color-body;
+  z-index: 1000;
+  opacity: 0.9;
+  animation: cssAnimation 0s ease-in 3s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.loader-wrapper__spinner {
+  z-index: 1001;
+  position: relative;
+  z-index: 9999;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  top: 45%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Homepage */
 
 .wrapper {
   max-width: 768px;
   margin: auto;
-}
-
-.loading-spinner {
-  font-size: 50px;
-  transform: rotate(360deg);
-  transition-duration: 3s;
-  z-index: -1;
 }
 
 /* Header */
@@ -54,12 +85,12 @@ header img {
   &__btn {
     @include btn-color;
     margin-top: 50px;
-    transition: 1s;
     & a {
       color: $font-color-link;
     }
     &:hover {
       @include btn-hover;
+      transition: 0.3s ease-out;
     }
   }
 }
@@ -164,6 +195,19 @@ footer {
   & a {
     color: $font-color-footer;
   }
+}
+
+.footer__proposition {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  & li {
+    color: $font-color-footer;
+  }
+}
+
+.footer__partnership {
+  @extend .footer__proposition;
 }
 
 /* Pages 1 à 4 */
