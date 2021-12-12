@@ -254,6 +254,7 @@ footer {
 
 .menu-card {
   margin: $margin-menu-card;
+  animation: topToBottom ease 2s;
   &__title:after {
     @include green-bar;
     }
@@ -262,6 +263,15 @@ footer {
     font-size: $font-size-footer;
     margin-top: $margin-value-4;
     margin-bottom: $margin-value-1;
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
   }
 }
 
