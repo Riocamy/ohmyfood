@@ -55,13 +55,15 @@ ul {
 /* Icône des favoris */
 
 .fa-heart {
+  padding: $padding-heart;
   font-size: 25px;
   &:hover {
-    transition: 0.3s ease;
     display: block;
     background: -webkit-linear-gradient($secondary-color, $primary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: all 350ms ease;
+    transform: scale(1.2);
     font-weight: bold;
     cursor: pointer;
   }
@@ -85,4 +87,15 @@ ul {
 .fa-arrow-left {
   float: left;
   margin-left: 20px;
+}
+
+/* Icône de l'animation des menus des pages restaurants */
+
+.fa-check-circle {
+  position: relative;
+  color: $font-color-link;
+  top: 30%;
+  font-size: 25px;
+  transform: rotate(-360deg);
+  transition: transform 700ms;
 }

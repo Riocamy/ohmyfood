@@ -1,6 +1,7 @@
 @import "./vendors/_normalize.scss";
 @import "./utils/variables.scss";
 @import "./utils/mixins.scss";
+@import "./utils/keyframes.scss";
 @import "./base/base.scss";
 
 /* Version mobile */
@@ -15,17 +16,9 @@
   background: $background-color-body;
   z-index: 1000;
   opacity: 0.9;
-  animation: cssAnimation 0s ease-in 3s forwards;
+  animation: loading 0s ease-in 3s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-}
-
-@keyframes cssAnimation {
-  to {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
 }
 
 .loader-wrapper__spinner {
@@ -38,15 +31,10 @@
   top: 45%;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 /* Homepage */
 
 .wrapper {
-  max-width: 768px;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -62,6 +50,7 @@ header img {
 
 .explore {
   text-align: center;
+  transition: $main-transform;
   &__localisation {
     background: $localisation-gradient;
     display: flex;
@@ -118,7 +107,6 @@ header img {
   &__number {
     @include number-display;
     position: absolute;
-    
   }
 }
 
@@ -174,7 +162,7 @@ header img {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    margin-right: $margin-value-4;
+    right: $margin-value-4;
     bottom: 40px;
     /* Icône des favoris dans le fichier "_base.scss" */
   }
@@ -254,7 +242,7 @@ footer {
 
 .menu-card {
   margin: $margin-menu-card;
-  animation: topToBottom ease 2s;
+
   &__title:after {
     @include green-bar;
     }
@@ -266,30 +254,40 @@ footer {
   }
 }
 
-@keyframes topToBottom {
-  0% {
-    margin-top: -5%;
-  }
-  100% {
-    margin-top: 0%;
-  }
-}
-
 .menu-btn {
   @include box-shadow;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background: $font-color-link;
   border-radius: $radius-main;
-  padding: $padding-menu-btn;
+  cursor: pointer;
+  overflow: hidden;
+  height: fit-content;
   margin-bottom: $margin-value-2;
+  transition: all 2000ms;
+  animation: topToBottom ease 2s;
   & h2 {
     font-weight: $bold-weight;
     font-size: $menu-title;
     font-size: $menu-title;
     margin: $zero-value;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  & span {
+    margin-left: $margin-value-2;
+    font-weight: bold;
   }
   &__content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 100%;
+    padding: $padding-menu-btn;
+  }
+  &__text {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -298,14 +296,54 @@ footer {
       font-size: $menu-description;
     }
   }
+  &__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &:hover > .menu-btn__check {
+    visibility: visible;
+    flex: 25%;
+    transition: 800ms;
+  }
+  &:hover > .menu-btn__content {
+    flex: 75%;
+  }
+  &:hover .fa-check-circle {
+    transform: rotate(0deg);
+  }
+}
+
+.menu-btn__check {
+  flex: 0;
+  color: $font-color-link;
+  background-color: $tertiary-color;
+  text-align: center;
+  white-space: nowrap;
+  visibility: hidden;
+}
+
+/* Effets d'apparition progressive */
+
+.fade-in-entrees {
+  animation: fadeInEntrees ease 2s;
+}
+
+.fade-in-dishes {
+  animation: fadeInDishes ease 4s;
+}
+
+.fade-in-desserts {
+  animation: fadeInDesserts ease 6s;
 }
 
 /* Bouton commande */
 
 .btn-order {
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
   margin-top: $margin-value-5;
+  transition: $main-transform;
   & a {
     @include btn-color;
     @include padding-btn-more;

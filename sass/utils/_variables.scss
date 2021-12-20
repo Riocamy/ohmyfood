@@ -34,10 +34,11 @@ $padding-explore-paragraph: 0 10px 0 10px;
 $padding-filter: 25px 35px 25px 40px;
 $padding-filter-number: 10px;
 $padding-restaurants: 40px 0 50px 0;
-$padding-novelty: 5px;
+$padding-novelty: 5px 10px 5px 10px;
 $padding-footer: 25px 0 20px 25px;
-$padding-menu-restaurant: 30px 0 40px 0;
-$padding-menu-btn: 15px 25px 10px 10px;
+$padding-menu-restaurant: 30px 0 80px 0;
+$padding-menu-btn: 15px 10px 15px 10px;
+$padding-heart: 1px;
 
 /* Margin */
 
@@ -54,7 +55,7 @@ $margin-value-1: 5px;
 $margin-value-2: 10px;
 $margin-value-3: 20px;
 $margin-value-4: 30px;
-$margin-value-5: 50px;
+$margin-value-5: 65px;
 
 /* Border radius */
 
@@ -70,3 +71,4 @@ $zero-value: 0;
 $main-width: 100%;
 $normal-weight: normal;
 $bold-weight: bold;
+$main-transform: transform 1s;
