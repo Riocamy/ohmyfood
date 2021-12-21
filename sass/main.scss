@@ -29,13 +29,14 @@
   display: flex;
   justify-content: center;
   top: 45%;
+  animation: spin 3s ease-in;
 }
 
 /* Homepage */
 
 .wrapper {
-  max-width: 600px;
-  margin: auto;
+  width: auto;
+  margin: 0;
 }
 
 /* Header */
@@ -74,7 +75,7 @@ header img {
   &__btn {
     @include btn-color;
     margin-top: 50px;
-    & a {
+    & span {
       color: $font-color-link;
     }
     &:hover {
@@ -97,12 +98,16 @@ header img {
   margin-left: $margin-value-2;
   & a {
     @include box-shadow;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
     background: $background-color-body;
     padding: $padding-filter;
     border-radius: $radius-main;
     margin: $margin-filter;
     width: $main-width;
     font-weight: $bold-weight;
+    cursor: help;
   }
   &__number {
     @include number-display;
@@ -242,10 +247,15 @@ footer {
 
 .menu-card {
   margin: $margin-menu-card;
-
-  &__title:after {
-    @include green-bar;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__title {
+    margin-left: $margin-value-1;
+    &:after {
+      @include green-bar;
     }
+  }
   & h2 {
     font-weight: $normal-weight;
     font-size: $font-size-footer;
@@ -264,7 +274,7 @@ footer {
   overflow: hidden;
   height: fit-content;
   margin-bottom: $margin-value-2;
-  transition: all 2000ms;
+  transition: all 2s;
   animation: topToBottom ease 2s;
   & h2 {
     font-weight: $bold-weight;
@@ -301,16 +311,16 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  &:hover > .menu-btn__content {
+    flex: 75%;
+  }
   &:hover > .menu-btn__check {
     visibility: visible;
     flex: 25%;
     transition: 800ms;
   }
-  &:hover > .menu-btn__content {
-    flex: 75%;
-  }
   &:hover .fa-check-circle {
-    transform: rotate(0deg);
+    animation: spin 300ms ease-out;
   }
 }
 
@@ -351,5 +361,107 @@ footer {
   }
   &:hover a {
     @include btn-hover;
+  }
+}
+
+/* Version Tablettes */
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .user h2 {
+    text-align: center;
+  }
+  .filters-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .filter a {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  .restaurants h2 {
+    text-align: center;
+  }
+  .card {
+    width: $card-width-tablet;
+    margin: $margin-card-responsive
+  }
+  footer h2,
+  footer a {
+    margin-left: $margin-value-6;
+  }
+}
+
+/* Pages Version Desktop */
+
+@media all and (min-width: 992px) {
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    width: auto;
+  }
+  .menu-restaurant__title {
+    justify-content: center;
+    & h1 {
+      margin-right: $margin-value-7;
+    }
+  }
+}
+
+/* Pages Version Tablettes  */
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .menu-restaurant {
+    padding: $padding-menu-responsive;
+  }
+}
+
+/* Versions Desktop */
+
+@media only screen and (min-width: 992px) {
+  .user h2 {
+    text-align: center;
+    margin-bottom: $margin-value-4;
+  }
+  .filters-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .filter a {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  .restaurants {
+    padding-left: $padding-responsive;
+    padding-right: $padding-responsive;
+    & h2 {
+      text-align: center;
+      margin-bottom: $margin-value-8;
+    }
+  }
+  .cards-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: auto;
+  }
+  .card {
+    width: $card-width-desktop;
+    margin-bottom: $margin-value-8;
+  }
+  footer h2,
+  footer a {
+    margin-left: $margin-footer-responsive;
+  }
+  footer a {
+    display: flex;
+    flex-direction: row;
   }
 }

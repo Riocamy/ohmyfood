@@ -7,6 +7,7 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -81,7 +82,6 @@ ul {
   @extend .fa-utensils;
 }
 
-
 /* Icône du header des pages restaurants */
 
 .fa-arrow-left {
@@ -96,6 +96,4 @@ ul {
   color: $font-color-link;
   top: 30%;
   font-size: 25px;
-  transform: rotate(-360deg);
-  transition: transform 700ms;
 }

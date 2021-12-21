@@ -39,6 +39,8 @@ $padding-footer: 25px 0 20px 25px;
 $padding-menu-restaurant: 30px 0 80px 0;
 $padding-menu-btn: 15px 10px 15px 10px;
 $padding-heart: 1px;
+$padding-menu-responsive: 5% 15% 10% 15%;
+$padding-responsive: 10%;
 
 /* Margin */
 
@@ -50,12 +52,16 @@ $margin-card-paragraph: 0 0 7px 0;
 $margin-menu-restaurant-title: 0 30px 0 20px;
 $margin-menu-card: 0 10px 0 10px;
 $margin-menu-btn-paragraph: 5px 0 0 0;
+$margin-card-responsive: 30px auto;
 
 $margin-value-1: 5px;
 $margin-value-2: 10px;
 $margin-value-3: 20px;
 $margin-value-4: 30px;
 $margin-value-5: 65px;
+$margin-value-6: 15%;
+$margin-value-7: 15px;
+$margin-value-8: 40px;
 
 /* Border radius */
 
@@ -72,3 +78,6 @@ $main-width: 100%;
 $normal-weight: normal;
 $bold-weight: bold;
 $main-transform: transform 1s;
+$card-width-desktop: 45%;
+$card-width-tablet: 65%;
+$margin-footer-responsive: 11%;
