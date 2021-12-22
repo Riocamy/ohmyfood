@@ -1,0 +1,36 @@
+/* Homepage version Tablettes */
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .user h2 {
+    text-align: center;
+  }
+  .filters-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .filter a {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  .restaurants h2 {
+    text-align: center;
+  }
+  .card {
+    width: $card-width-tablet;
+    margin: $margin-card-responsive
+  }
+  footer h2,
+  footer a {
+    margin-left: $margin-value-6;
+  }
+}
+
+/* Pages Version Tablettes  */
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .menu-restaurant {
+    padding: $padding-menu-responsive;
+  }
+}

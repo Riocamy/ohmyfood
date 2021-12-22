@@ -1,0 +1,64 @@
+/* Homepage versions Desktop */
+
+@media only screen and (min-width: 992px) {
+  .user h2 {
+    text-align: center;
+    margin-bottom: $margin-value-4;
+  }
+  .filters-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .filter a {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  .restaurants {
+    padding-left: $padding-responsive;
+    padding-right: $padding-responsive;
+    & h2 {
+      text-align: center;
+      margin-bottom: $margin-value-8;
+    }
+  }
+  .cards-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: auto;
+  }
+  .card {
+    width: $card-width-desktop;
+    margin-bottom: $margin-value-8;
+  }
+  footer h2,
+  footer a {
+    margin-left: $margin-footer-responsive;
+  }
+  footer a {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* Pages Version Desktop */
+
+@media all and (min-width: 992px) {
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    width: auto;
+  }
+  .menu-restaurant__title {
+    justify-content: center;
+    & h1 {
+      margin-right: $margin-value-7;
+    }
+  }
+}
