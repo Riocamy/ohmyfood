@@ -34,13 +34,20 @@
     width: $card-width-desktop;
     margin-bottom: $margin-value-8;
   }
-  footer h2,
-  footer a {
-    margin-left: $margin-footer-responsive;
-  }
-  footer a {
-    display: flex;
-    flex-direction: row;
+  footer {
+    & h2 {
+      margin-left: $margin-footer-title;
+    }
+    & a {
+      display: flex;
+      flex-direction: row;
+      margin-left: $margin-value-3;
+    }
+    & ul {
+      display: flex;
+      flex-direction: row;
+      margin-left: $margin-footer-content;
+    }
   }
 }
 
