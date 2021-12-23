@@ -354,8 +354,8 @@ footer {
     @include btn-color;
     @include padding-btn-more;
     color: $font-color-link;
-  }
-  &:hover a {
-    @include btn-hover;
+    &:hover {
+      @include btn-hover;
+    }
   }
 }

@@ -1,8 +1,8 @@
 @import "./vendors/_normalize.scss";
-@import "./utils/variables.scss";
-@import "./utils/mixins.scss";
-@import "./utils/keyframes.scss";
-@import "./base/base.scss";
-@import "./media/style-sm.scss";
-@import "./media/style-md.scss";
-@import "./media/style-lg.scss";
+@import "./utils/_variables.scss";
+@import "./utils/_mixins.scss";
+@import "./utils/_keyframes.scss";
+@import "./base/_base.scss";
+@import "./media/_style-sm.scss"; /* Version mobile (mobile first) */
+@import "./media/_style-md.scss"; /* Version tablettes */
+@import "./media/_style-lg.scss"; /* Version desktop */
