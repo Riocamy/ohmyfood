@@ -26,6 +26,12 @@ $menu-title: 18px;
 $explore-title: 22px;
 $restaurant-title: 28px;
 
+/* Tailles des icônes */
+
+$icon-size-1: 15px;
+$icon-size-2: 25px;
+$icon-size-footer: 12px;
+
 /* Padding */
 
 $padding-explore-title: 30px 60px 0 60px;
@@ -49,7 +55,7 @@ $margin-filter: 0 20px 15px 10px;
 $margin-card: 0 20px 15px 20px;
 $margin-card-title: 7px 0 0 0;
 $margin-card-paragraph: 0 0 7px 0;
-$margin-menu-restaurant-title: 0 30px 0 20px;
+$margin-menu-restaurant-title: 0 20px 0 20px;
 $margin-menu-card: 0 10px 0 10px;
 $margin-menu-btn-paragraph: 5px 0 0 0;
 $margin-card-responsive: 30px auto;
@@ -62,6 +68,7 @@ $margin-value-5: 65px;
 $margin-value-6: 15%;
 $margin-value-7: 15px;
 $margin-value-8: 40px;
+$margin-value-9: 50px;
 
 /* Border radius */
 
@@ -82,3 +89,6 @@ $card-width-desktop: 45%;
 $card-width-tablet: 65%;
 $margin-footer-title: 11%;
 $margin-footer-content: 9%;
+$ending-hover-btn: 500ms;
+$transition-menu-icon: 200ms;
+$transition-menu-check: 800ms;

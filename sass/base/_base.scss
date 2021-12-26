@@ -34,14 +34,14 @@ ul {
 /* Icône de localisation */
 
 .fa-map-marker-alt {
-  margin-right: 10px;
+  margin-right: $margin-value-2;
 }
 
 /* Icônes des filtres */
 
 .fa-mobile-alt {
-  font-size: 15px;
-  margin-right: 20px;
+  font-size: $icon-size-1;
+  margin-right: $margin-value-3;
   color: grey;
 }
 
@@ -57,7 +57,7 @@ ul {
 
 .fa-heart {
   padding: $padding-heart;
-  font-size: 25px;
+  font-size: $icon-size-2;
   &:hover {
     display: block;
     background: -webkit-linear-gradient($secondary-color, $primary-color);
@@ -74,8 +74,8 @@ ul {
 
 .fa-utensils {
   color: whitesmoke;
-  margin-right: 5px;
-  font-size: 12px;
+  margin-right: $margin-value-1;
+  font-size: $icon-size-footer;
 }
 
 .fa-hands-helping {
@@ -85,8 +85,9 @@ ul {
 /* Icône du header des pages restaurants */
 
 .fa-arrow-left {
-  float: left;
-  margin-left: 20px;
+  margin-left: $margin-value-3;
+  position: absolute;
+  top: 15px;
 }
 
 /* Icône de l'animation des menus des pages restaurants */
@@ -95,5 +96,5 @@ ul {
   position: relative;
   color: $font-color-link;
   top: 30%;
-  font-size: 25px;
+  font-size: $icon-size-2;
 }

@@ -67,7 +67,8 @@ header img {
   }
   &__btn {
     @include btn-color;
-    margin-top: 50px;
+    transition: $ending-hover-btn;
+    margin-top: $margin-value-9;
     & span {
       color: $font-color-link;
     }
@@ -270,8 +271,7 @@ footer {
   overflow: hidden;
   height: fit-content;
   margin-bottom: $margin-value-2;
-  transition: all 2s;
-  animation: topToBottom ease 2s;
+  animation: topToBottom linear 2s;
   & h2 {
     font-weight: $bold-weight;
     font-size: $menu-title;
@@ -313,10 +313,11 @@ footer {
   &:hover > .menu-btn__check {
     visibility: visible;
     flex: 25%;
-    transition: 800ms;
+    transition: $transition-menu-check;
   }
   &:hover .fa-check-circle {
-    animation: spin 300ms ease-out;
+    animation: spin 300ms linear;
+    transition-delay: $transition-menu-icon;
   }
 }
 
@@ -327,20 +328,21 @@ footer {
   text-align: center;
   white-space: nowrap;
   visibility: hidden;
+  transition: 100ms linear;
 }
 
 /* Effets d'apparition progressive */
 
 .fade-in-entrees {
-  animation: fadeInEntrees ease 2s;
+  animation: fadeInEntrees ease-in-out 2s;
 }
 
 .fade-in-dishes {
-  animation: fadeInDishes ease 4s;
+  animation: fadeInDishes ease-in-out 4s;
 }
 
 .fade-in-desserts {
-  animation: fadeInDesserts ease 6s;
+  animation: fadeInDesserts ease-in-out 6s;
 }
 
 /* Bouton commande */
@@ -349,11 +351,13 @@ footer {
   display: block;
   text-align: center;
   margin-top: $margin-value-5;
-  transition: $main-transform;
+  
   & a {
     @include btn-color;
     @include padding-btn-more;
     color: $font-color-link;
+    transition: $ending-hover-btn;
+    
     &:hover {
       @include btn-hover;
     }
