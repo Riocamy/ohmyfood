@@ -25,6 +25,7 @@ $font-size-footer: 16px;
 $menu-title: 18px;
 $explore-title: 22px;
 $restaurant-title: 28px;
+$footer-desktop: 22px;
 
 /* Tailles des icônes */
 
@@ -39,7 +40,7 @@ $padding-explore-description: 0 0 75px 0;
 $padding-explore-paragraph: 0 10px 0 10px;
 $padding-filter: 25px 35px 25px 40px;
 $padding-filter-number: 10px;
-$padding-restaurants: 40px 0 50px 0;
+$padding-restaurants: 50px 0 50px 0;
 $padding-novelty: 5px 10px 5px 10px;
 $padding-footer: 25px 0 20px 25px;
 $padding-menu-restaurant: 30px 0 80px 0;
@@ -50,8 +51,9 @@ $padding-responsive: 10%;
 
 /* Margin */
 
-$margin-user: 40px 0 50px 0;
+$margin-user: 50px 0 50px 0;
 $margin-filter: 0 20px 15px 10px;
+$margin-explore-paragraph: 15px 10px 65px 10px;
 $margin-card: 0 20px 15px 20px;
 $margin-card-title: 7px 0 0 0;
 $margin-card-paragraph: 0 0 7px 0;
@@ -59,6 +61,7 @@ $margin-menu-restaurant-title: 0 20px 0 20px;
 $margin-menu-card: 0 10px 0 10px;
 $margin-menu-btn-paragraph: 5px 0 0 0;
 $margin-card-responsive: 30px auto;
+$margin-wrapper: 0 auto;
 
 $margin-value-1: 5px;
 $margin-value-2: 10px;
@@ -82,13 +85,12 @@ $radius-restaurant: 30px 30px 0 0;
 
 $zero-value: 0;
 $main-width: 100%;
+$media-width: 75%;
+$card-width-desktop: 40%;
 $normal-weight: normal;
 $bold-weight: bold;
 $main-transform: transform 1s;
-$card-width-desktop: 45%;
-$card-width-tablet: 65%;
-$margin-footer-title: 11%;
-$margin-footer-content: 9%;
 $ending-hover-btn: 500ms;
 $transition-menu-icon: 200ms;
 $transition-menu-check: 800ms;
+$restaurant-margin-top: -45px;

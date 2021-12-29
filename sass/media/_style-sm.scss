@@ -2,7 +2,7 @@
 
 /* Ecran de chargement */
 
-.loader-wrapper {
+.wrapper-loader {
   position: fixed;
   top: 0;
   width: 100%;
@@ -61,8 +61,7 @@ header img {
       margin: $zero-value;
     }
     & p {
-      padding: $padding-explore-paragraph;
-      margin-bottom: $margin-value-5;
+      margin: $margin-explore-paragraph;
     }
   }
   &__btn {
@@ -116,6 +115,7 @@ header img {
   padding: $padding-restaurants;
   & h2 {
     margin-left: $margin-value-3;
+    margin-top: $zero-value;
   }
 }
 

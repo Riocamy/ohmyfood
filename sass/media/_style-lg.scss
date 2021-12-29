@@ -15,9 +15,13 @@
     flex-wrap: nowrap;
     align-items: baseline;
   }
+  .wrapper-cards {
+    width: $main-width;
+    background: $background-color-body;
+  }
   .restaurants {
-    padding-left: $padding-responsive;
-    padding-right: $padding-responsive;
+    width: $media-width;
+    margin: $margin-wrapper;
     & h2 {
       text-align: center;
       margin-bottom: $margin-value-8;
@@ -28,25 +32,33 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    flex: auto;
   }
   .card {
     width: $card-width-desktop;
     margin-bottom: $margin-value-8;
   }
+  .wrapper-footer {
+    width: $main-width;
+    background: $background-color-footer;
+  }
   footer {
+    width: $media-width;
+    margin: $margin-wrapper;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    padding-left: $zero-value;
     & h2 {
-      margin-left: $margin-footer-title;
+      margin-left: $zero-value;
+      font-size: $footer-desktop;
     }
     & a {
-      display: flex;
-      flex-direction: row;
-      margin-left: $margin-value-3;
+      margin-left: $margin-value-4;
     }
     & ul {
       display: flex;
       flex-direction: row;
-      margin-left: $margin-footer-content;
     }
   }
 }
