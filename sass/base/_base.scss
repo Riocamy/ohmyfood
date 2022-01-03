@@ -34,14 +34,14 @@ ul {
 /* Icône de localisation */
 
 .fa-map-marker-alt {
-  margin-right: $margin-value-2;
+  margin-right: $margin-1;
 }
 
 /* Icônes des filtres */
 
 .fa-mobile-alt {
-  font-size: $icon-size-1;
-  margin-right: $margin-value-3;
+  font-size: $icon-size-normal;
+  margin-right: $margin-3;
   color: grey;
 }
 
@@ -57,7 +57,7 @@ ul {
 
 .fa-heart {
   padding: $padding-heart;
-  font-size: $icon-size-2;
+  font-size: $icon-size-big;
   &:hover {
     display: block;
     background: -webkit-linear-gradient($secondary-color, $primary-color);
@@ -74,7 +74,7 @@ ul {
 
 .fa-utensils {
   color: whitesmoke;
-  margin-right: $margin-value-1;
+  margin-right: $margin-base;
   font-size: $icon-size-footer;
 }
 
@@ -85,7 +85,7 @@ ul {
 /* Icône du header des pages restaurants */
 
 .fa-arrow-left {
-  margin-left: $margin-value-3;
+  margin-left: $margin-3;
   position: absolute;
   top: 15px;
 }
@@ -95,6 +95,6 @@ ul {
 .fa-check-circle {
   position: relative;
   color: $font-color-link;
+  font-size: $icon-size-big;
   top: 30%;
-  font-size: $icon-size-2;
 }

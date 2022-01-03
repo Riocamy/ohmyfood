@@ -3,7 +3,7 @@
 @media only screen and (min-width: 992px) {
   .user h2 {
     text-align: center;
-    margin-bottom: $margin-value-4;
+    margin-bottom: $margin-4;
   }
   .filters-items {
     display: flex;
@@ -24,7 +24,7 @@
     margin: $margin-wrapper;
     & h2 {
       text-align: center;
-      margin-bottom: $margin-value-8;
+      margin-bottom: $margin-5;
     }
   }
   .cards-items {
@@ -35,7 +35,7 @@
   }
   .card {
     width: $card-width-desktop;
-    margin-bottom: $margin-value-8;
+    margin-bottom: $margin-5;
   }
   .wrapper-footer {
     width: $main-width;
@@ -54,7 +54,7 @@
       font-size: $footer-desktop;
     }
     & a {
-      margin-left: $margin-value-4;
+      margin-left: $margin-4;
     }
     & ul {
       display: flex;
@@ -77,7 +77,7 @@
   .menu-restaurant__title {
     justify-content: center;
     & h1 {
-      margin-right: $margin-value-7;
+      margin-right: $margin-2;
     }
   }
 }
