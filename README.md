@@ -28,26 +28,23 @@
 <li>W3C Validator CSS: check</li>
 
 ## Install the project
-If you want to test easily the website project, you can go to github-pages version: https://riocamy.github.io/ChlodionGossart_3_27112021/
+<li>If you want to test easily the website project, you can go to github-pages version: http://riocamy.github.io/ChlodionGossart_3_27112021/
 <br>
 Or you can pull the project directly on your code editor :<br>
-https://github.com/Riocamy/ChlodionGossart_3_27112021.git
+http://github.com/Riocamy/ChlodionGossart_3_27112021.git
 <br>
 You will need to install SASS to working on this project:<br>
 ```terminal
 npm -g install sass
 ```
-<br>
 To convert automatically SCSS files to CSS, you will need to write this command line in your terminal:<br>
 ```terminal
 npm run sass
 ```
-<br>
 This project use an autoprefixer to ensure the compatibility between the different web browsers. To install this autoprefixer, use this command:<br>
 ```terminal
 npm install autoprefixer postcss postcss-cli -g
 ```
-<br>
 To launch the autoprefixer:<br>
 ```terminal
 npm run prefix
