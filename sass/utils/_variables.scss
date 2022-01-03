@@ -29,8 +29,8 @@ $footer-desktop: 22px;
 
 /* Tailles des icônes */
 
-$icon-size-1: 15px;
-$icon-size-2: 25px;
+$icon-size-normal: 15px;
+$icon-size-big: 25px;
 $icon-size-footer: 12px;
 
 /* Padding */
@@ -46,8 +46,6 @@ $padding-footer: 25px 0 20px 25px;
 $padding-menu-restaurant: 30px 0 80px 0;
 $padding-menu-btn: 15px 10px 15px 10px;
 $padding-heart: 1px;
-$padding-menu-responsive: 5% 15% 10% 15%;
-$padding-responsive: 10%;
 
 /* Margin */
 
@@ -60,18 +58,16 @@ $margin-card-paragraph: 0 0 7px 0;
 $margin-menu-restaurant-title: 0 20px 0 20px;
 $margin-menu-card: 0 10px 0 10px;
 $margin-menu-btn-paragraph: 5px 0 0 0;
-$margin-card-responsive: 30px auto;
 $margin-wrapper: 0 auto;
 
-$margin-value-1: 5px;
-$margin-value-2: 10px;
-$margin-value-3: 20px;
-$margin-value-4: 30px;
-$margin-value-5: 65px;
-$margin-value-6: 15%;
-$margin-value-7: 15px;
-$margin-value-8: 40px;
-$margin-value-9: 50px;
+$margin-base: 5px;
+$margin-1: $margin-base * 2;
+$margin-2: $margin-base * 3;
+$margin-3: $margin-base * 4;
+$margin-4: $margin-base * 6;
+$margin-5: $margin-base * 8;
+$margin-6: $margin-base * 10;
+$margin-7: $margin-base * 13;
 
 /* Border radius */
 

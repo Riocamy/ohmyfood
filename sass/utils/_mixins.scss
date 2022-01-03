@@ -41,9 +41,9 @@
 
 @mixin green-bar {
   background-color: $tertiary-color;
-    content: "";
-    display: block;
-    height: 3px;
-    width: 45px;
-    margin-bottom: 15px;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 45px;
+  margin-bottom: 15px;
 }

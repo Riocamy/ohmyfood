@@ -67,7 +67,7 @@ header img {
   &__btn {
     @include btn-color;
     transition: $ending-hover-btn;
-    margin-top: $margin-value-9;
+    margin-top: $margin-6;
     & span {
       color: $font-color-link;
     }
@@ -81,14 +81,14 @@ header img {
 .user {
   margin: $margin-user;
   & h2 {
-    margin-left: $margin-value-3;
+    margin-left: $margin-3;
   }
 }
 
 .filter {
   display: flex;
   flex-direction: row;
-  margin-left: $margin-value-2;
+  margin-left: $margin-1;
   & a {
     @include box-shadow;
     display: flex;
@@ -114,7 +114,7 @@ header img {
   background: $background-color-body;
   padding: $padding-restaurants;
   & h2 {
-    margin-left: $margin-value-3;
+    margin-left: $margin-3;
     margin-top: $zero-value;
   }
 }
@@ -139,7 +139,7 @@ header img {
     background: $tertiary-color;
     position: relative;
     float: right;
-    margin-right: $margin-value-2;
+    margin-right: $margin-1;
     bottom: 150px;
     padding: $padding-novelty;
     border-radius: $radius-novelty;
@@ -149,7 +149,7 @@ header img {
     }
   }
   &__description {
-    margin-left: $margin-value-2;
+    margin-left: $margin-1;
     & h3 {
       margin: $margin-card-title;
     }
@@ -161,7 +161,7 @@ header img {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    right: $margin-value-4;
+    right: 30px;
     bottom: 40px;
     /* Icône des favoris dans le fichier "_base.scss" */
   }
@@ -248,7 +248,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   &__title {
-    margin-left: $margin-value-1;
+    margin-left: $margin-base;
     &:after {
       @include green-bar;
     }
@@ -256,8 +256,8 @@ footer {
   & h2 {
     font-weight: $normal-weight;
     font-size: $font-size-footer;
-    margin-top: $margin-value-4;
-    margin-bottom: $margin-value-1;
+    margin-top: $margin-4;
+    margin-bottom: $margin-base;
   }
 }
 
@@ -270,7 +270,7 @@ footer {
   cursor: pointer;
   overflow: hidden;
   height: fit-content;
-  margin-bottom: $margin-value-2;
+  margin-bottom: $margin-1;
   animation: topToBottom linear 2s;
   & h2 {
     font-weight: $bold-weight;
@@ -282,7 +282,7 @@ footer {
     overflow: hidden;
   }
   & span {
-    margin-left: $margin-value-2;
+    margin-left: $margin-1;
     font-weight: bold;
   }
   &__content {
@@ -350,7 +350,7 @@ footer {
 .btn-order {
   display: block;
   text-align: center;
-  margin-top: $margin-value-5;
+  margin-top: $margin-7;
   
   & a {
     @include btn-color;
