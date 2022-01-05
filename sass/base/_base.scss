@@ -58,15 +58,15 @@ ul {
 .fa-heart {
   padding: $padding-heart;
   font-size: $icon-size-big;
+  cursor: pointer;
   &:hover {
     display: block;
     background: -webkit-linear-gradient($secondary-color, $primary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: all 350ms ease;
-    transform: scale(1.2);
+    transition: all 350ms;
+    transform: scale(1.1);
     font-weight: bold;
-    cursor: pointer;
   }
 }
 
