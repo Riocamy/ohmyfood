@@ -31,11 +31,11 @@ Ohmyfood! is a young startup that would like to establish itself in the catering
 
 ## Install the project
 
-If you want to test easily the website project, you can go to github-pages version: http://riocamy.github.io/ChlodionGossart_3_27112021/
+If you want to test easily the website project, you can go to github-pages version: https://riocamy.github.io/P3-ohmyfood/
 
 Or you can pull the project directly on your code editor :
 
-[http://github.com/Riocamy/ChlodionGossart_3_27112021.git](http://github.com/Riocamy/ChlodionGossart_3_27112021.git)
+[https://github.com/Riocamy/P3-ohmyfood.git](https://github.com/Riocamy/P3-ohmyfood.git)
 
 You will need to install SASS to working on this project:
 
