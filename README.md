@@ -10,7 +10,7 @@ Ohmyfood! is a young startup that would like to establish itself in the catering
 
 ## Notes
 
-**Polices**
+**Font text**
 
 - Logo & titles: Shrikhand
 - Text: Roboto
